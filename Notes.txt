@@ -1,0 +1,128 @@
+var let const
+const :- fixed value
+
+Types of console 
+console.log("hi")
+console.info("hi") // is me and console.log me koi differnce nahi hota bus kisi kisi browser me i icon aata hai 
+console.warn("hi")
+console.error("hi")
+console.table({name: "Aakash"})// isme object ki jarurat hai 
+
+// Prompt alert // ye humesha STRING me value leta hai 
+let nm = prompt("name ?")
+console.log(nm)
+
+// Is ko string se number yani INT me convert karne ke 3 tarike hai 
+1. parseInt(nm)
+2. Number(nm)
+3.let nm = +prompt("name ?")
+
+//   let age = prompt("age batao")
+    if (age === null){ // agar cancel par clik kiya tho 
+        console.log("abe cancel daya ")
+    }
+    else 
+    { if (age.trim() === ""){ // agar sapce ke saath kuch likha ho (            a               ) tho ye trim kar dega
+        console.log(`bhai sahi se likh le `)
+    }
+
+
+// Data Types
+    int,float,String,boolean
+
+// array 
+    array ek se jada chizo k liye hota hai 
+    ["AAKASH","RAN","ANKUR"]
+    object ek bande ki kai saari cheejo k liye hota hai 
+    {
+        name:"AAKASH",
+        class :"JS"
+    }
+
+undifine 
+var a;
+
+//NAN - koi number ke saath aisa operation kiya jo ho nahi skta to NAN milta hai 
+        12*"AALASJ" = 
+        
+Infinity = 1/0
+
+// relative and primitive datatyes in JS
+
+refrence - array objects funtions 
+primitive - number booleans Strings null undined NAN Infinity Sumbol Big INT
+
+primitive - jinki value direct copy kar sate hai 
+refrence  - jinki value direct copy nahi kar saktea hai 
+
+typeof 12 :- kisi ka bhi type dekha na ho tho uske aaga typeof likh do 
+
+.slice(2,6)
+.split("")
+.replace("love","study at")
+.includes("love")
+
+Comparison Operators 
+
+== === != !== > < >= <=
+
+//== not strict compare NEVER USE THIS 
+//==== Strict compare ALWAYS USE THIS
+// != NEVER USE THIS 
+// !== ALWAYS USE THIS 
+
+
+Logical Operators
+
+&& || !
+
+// true && true = true //username === exist && password === userpassword
+// false && true = false
+// true && false = false
+// false && false = false
+
+// true || true = true
+// true || false = true
+// false || true = true
+// false || false = false
+
+! not :- ulta karta hai true ko false and false ko true 
+
+
+Ternary Operator 
+
+// condition ? doThis : doThat // is me 1st condition hota hai uske baad agar wo condition true ho tho ? ke baad wala chalta hai, false ho tho : ke baad wala 
+25>33 ? console.log("Ha 25 bada hai "):console.log("nahi  bada nahi hai ")
+
+Type CHecking Operator
+
+// Typeof 
+//instanceof 
+
+
+String Operator
+
+// + (for concatenation)
+"AAKASH"+"TIWARI"
+
+// Nullish Coalescing Operator
+// ?(fallback only when null / undefined)
+
+
+// Variable hoisting in JS 
+// hoisting ka matlab hai ki variable ko banane se pahle bhi use kiya jaa sakta hai 
+// hoisting me aapka variable toot jata hai 
+// intialization wohi rehta hai jaha variale tha
+// ab aapka variable error nahi deta kyuki wo humesha use hone se phale exist kr rha tha
+// hoisting let ke saath work nahi karta 
+
+
+///###### Loops $ Conditionals in Javascrpit
+//if else 
+// truthy and falsy 
+// 0 "" false NaN null undefined document.all
+// kuch bhi dikhe -> true
+
+Loops 
+
+for(start;end;change)
