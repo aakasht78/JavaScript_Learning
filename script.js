@@ -5,7 +5,7 @@
 
 // const { log } = require("node:console")
 
-// types of console 
+// types of console
 
 // console.log("hi")
 // console.info("hi")
@@ -30,8 +30,7 @@
 // alert(`HEY ${a}`)
 
 // let a = prompt()  // Prompt se jo bhi lo ge wo 1 String ban jaye ga This is the problem in JS
-// console.log(typeof a) 
-
+// console.log(typeof a)
 
 // let count = 5;
 // console.log(count);
@@ -93,29 +92,29 @@
 //     console.log("EVEN :-  " + i)
 // }
 
-// 2. Print Reverse Number 
+// 2. Print Reverse Number
 
-    // for(let i=10;i>0;i--){
-    //     console.log(i)
-    // }
+// for(let i=10;i>0;i--){
+//     console.log(i)
+// }
 
 // 3. Print word 5 times
 
-    // for(let i=1;i<=5;i++){
-    //     console.log("yes")
-    // }
+// for(let i=1;i<=5;i++){
+//     console.log("yes")
+// }
 
 // 4. Print EVEN ODD if me EVEN else me ODD
 
-    // for(let i=1;i<=10;i++){
-    //     if(i%2===0){
-    //         console.log(`${i} - Even`)
-            
-    //     }
-    //     else{
-    //         console.log(`${i} - Odd`)
-    //     }
-    // }
+// for(let i=1;i<=10;i++){
+//     if(i%2===0){
+//         console.log(`${i} - Even`)
+
+//     }
+//     else{
+//         console.log(`${i} - Odd`)
+//     }
+// }
 
 // 5. Ask user a numeber and say if is it +ve or -ve using prompt
 
@@ -129,30 +128,77 @@
 
 // 6. check whether user is eligible for vote or not
 
-    // let age=+prompt("Age Batao")
-    // if(age>=18){
-    //     console.log(`You are ${age}, you can vote`)
-    // }
-    // else{
-    //     console.log(`You are ${age}, you can't vote`)
-    // }
+// let age=+prompt("Age Batao")
+// if(age>=18){
+//     console.log(`You are ${age}, you can vote`)
+// }
+// else{
+//     console.log(`You are ${age}, you can't vote`)
+// }
+
+// let age = prompt("age batao");
+// if (age === null) {
+//   console.error("abe cancel dabya ");
+// } else {
+//   if (age.trim() === "") {
+//     console.error(`bhai sahi se likh le `);
+//   } else {
+//     age = Number(age.trim());
+//     if (isNaN(age)) {
+//       console.warn("bhai please number dede....");
+//     } else {
+//       if (age < 0) console.error("Negative value dala");
+//       else if (age >= 18 && age<=125) console.log(` your age is ${age} you can vote`);
+//       else console.warn(`your age is ${age} you can't vote`);
+//     }
+//   }
+// }
+
+// // 7 . Print 5 ka table
+
+//   for(let i=1;i<=10;i++){
+//     console.log(`38 X ${i} = `+ i*38)
+//   }
+
+// 9 . Count how many number between 1 and 15 are greater than 8 Loop and count conditionally
+
+// let count = 0;
+// for(let i =1; i<=15;i++){
+//   if(i>8){
+//     count++;
+//     console.log(i)
+//   }
+// }
+// console.log(`total count is ${count}`)
+
+// 10. Ask user for password and print access status
+
+// let password = "Admin@123";
+
+// let pass = prompt("password de de bhai");
+// if (pass === null) {
+//   console.log("you cancelled it");
+// } else {
+//   if (pass === password) {
+//     console.log("matched");
+//   } else {
+//     console.log("not matched");
+//   }
+// }
 
 
+// LEVEl 2 :- 11. Allow only 3 attemt to enter correct password if user gets it right early, stop. if not Account Locked
 
-    let age = prompt("age batao")
-    if (age === null){
-        console.log("abe cancel dabya ")
-    }
-    else 
-    { if (age.trim() === ""){
-        console.log(`bhai sahi se likh le `)
-    }else{
-    age = Number(age.trim());
-    if(isNaN(age)){
-        console.log("bhai please number dede....")
-    }
-    else{
-        console.log(`${age}`+" confirm ye number hai ")
-    }
-}
-}
+ let password = "Admin"
+  let pass = prompt("Pass de")
+   if (pass === null) {
+  console.log("you cancelled it");
+   }
+ for(let i=1;i<=3;i++){
+  if(password===pass){
+    console.log("khul gya")
+  }
+  else{
+    console.log("locked")
+  }
+ }
