@@ -126,3 +126,20 @@ String Operator
 Loops 
 
 for(start;end;change)
+
+
+while :- tab tak chalo jab tak condition true hai 
+
+start
+while(end){
+    ////Your code 
+    //change
+}
+
+example 
+
+let i =1;
+while(i<11){
+  console.log("hello")
+  i++;
+}

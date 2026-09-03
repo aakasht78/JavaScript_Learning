@@ -186,19 +186,97 @@
 //   }
 // }
 
-
 // LEVEl 2 :- 11. Allow only 3 attemt to enter correct password if user gets it right early, stop. if not Account Locked
 
- let password = "Admin"
-  let pass = prompt("Pass de")
-   if (pass === null) {
-  console.log("you cancelled it");
-   }
- for(let i=1;i<=3;i++){
-  if(password===pass){
-    console.log("khul gya")
+// let pass = prompt("naam batao ");
+
+// while (pass !== "stop") {
+//   pass = prompt("naam batao ");
+//   console.log(pass);
+// }
+
+// let attempt = 0;
+// let khulgaya = false;
+// let pass = "Aakash";
+
+// let password = prompt("Password Batao");
+// attempt++;
+
+// if (password === pass) khulgaya = true;
+// while (password !== pass) {
+//   if (attempt === 3) {
+//     console.error("Account Locked");
+//     break;
+//   }
+//   password = prompt("Password Batao");
+//   if (password === pass) khulgaya = true;
+//   attempt++;
+// }
+
+// if (khulgaya === true) console.log("account opend");
+
+//apna password difine karo
+// ek baar password puchho
+// while banao jo tab tak chale jab tak password match na kar jaye
+
+// let sahipassword = "Aakash";
+// let attempt = 0;
+
+// let userpass = prompt("Password Please");
+// attempt++;
+// while (sahipassword !== userpass) {
+//   if (attempt === 3) {
+//     console.error("Locked")
+//     break;
+//   }
+//   attempt++;
+//   pass = prompt("Password Please");
+// }
+
+// let attempt = 0;
+// let sahipassword = "Aakash"
+
+// let userpass = prompt ("password please")
+// attempt++;
+
+// while(attempt<3 && sahipassword !== userpass){
+//   userpass = prompt ("password please");
+//   attempt++;
+// }
+// if(attempt ===3 && sahipassword !== userpass){
+//   console.error("Lock Ho gya")
+// }else{
+//   console.log("Done")
+// }
+
+// 12. ask user for words until they type "stop", count how many times they type "yes"
+//      loop until "stop" is typed. count yes
+
+// let word = prompt("word bolo");
+// let counter = 0;
+
+// while (word !== "stop") {
+//   if (word === "yes") counter++;
+//   word = prompt("word bolo");
+// }
+
+// console.log(`total times yes count : ${counter}`);
+
+// 13 Print numbers divisible by 7 from 1 to 50
+// use modulo % and loop 
+
+  // for(let i = 1; i<=50;i++){
+  //   if(i%7===0){
+  //     console.log(i)
+  //   }
+  // }
+
+// 14 sum of all odd numbers from 1 to 30 add only odd numbers print final sum
+
+  let sum = 0;
+  for(let i=1;i<=30;i++){
+    if(i%2 !==0){
+      sum=sum+i
+    }
   }
-  else{
-    console.log("locked")
-  }
- }
+  console.log(sum)
