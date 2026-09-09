@@ -143,3 +143,61 @@ while(i<11){
   console.log("hello")
   i++;
 }
+
+// do while
+
+
+// let i=1
+// do {
+//     console.log("1")
+//     i++
+// }while(1<10)
+
+// --- Recursion In JS
+===> funtions calling in itself
+
+EXAMPLE 
+
+    // function abcd(){
+//     console.log("hey")
+//     abcd()
+// }
+// abcd()
+
+// Continue in JS
+continue ka simple meaning hai:
+    Current iteration ko skip karo aur next iteration par chale jao.
+
+// funtion in JS 
+====> aapka code jo turant nahi chalega tab chalega jab aap bole ge ki chalo
+      aap us code ko kitni bhi baar chala sakte ho
+      kisi kaam ko repat karna ho ya fir jo baar baar ho rha hai use specific time par karna ho tho funtion ka use karte hai 
+
+      EXAMPLE
+function khanakhaao(){
+    console.log("step 1")
+    console.log("step 2")
+    console.log("step 3")
+    console.log("step 4")
+}
+khanakhaao()
+
+
+
+// parameter in JS
+function doSomething(name, age, email){
+    console.log(name,age,email)
+     console.log(arguments) // is arguments ke help se hum values ko access kar sakete ye 2nd way hai 
+                            [0] is tarah se bhi hum values ko access kar sakte hai 
+    }
+doSomething("Aakash",25,"aakash@gmial.com")
+
+
+
+// variable hoisting
+a() // ayise use nahi kar sakte variable me 
+var a = function(){
+
+}
+a()// ayise use kar sakte ha 
+function a(){}

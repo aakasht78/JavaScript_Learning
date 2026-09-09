@@ -81,3 +81,45 @@
 //     else console.log(i)
 // }
 
+
+// --- Recursion In JS
+
+// function abcd(){
+//     console.log("hey")
+//     abcd()
+// }
+// abcd()
+
+
+// Continue in JS
+
+// for(let i=1;i<10;i++){
+//     if(i===5)continue;
+//     console.log(i)
+// }
+
+// function in JS
+
+// function khanakhaao(){
+//     console.log("step 1")
+//     console.log("step 2")
+//     console.log("step 3")
+//     console.log("step 4")
+// }
+// khanakhaao()
+
+// parameter in JS
+
+// function doSomething(name, age, email){
+//     // console.log(name,age,email)
+//     console.log(arguments)
+// }
+// doSomething("Aakash",25,"aakash@gmial.com")
+
+// variable hoisting
+// a() // ayise use nahi kar sakte variable me 
+// var a = function(){
+
+// }
+// a()// ayise use kar sakte ha 
+// function a(){}

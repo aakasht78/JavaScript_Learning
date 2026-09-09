@@ -246,26 +246,26 @@
 
 // 19. ATM Simulator – Allow 3 withdrawals Start with ₹1000 balance. Ask withdrawal amount 3 times. if enough balance → deduct Else → print “Insufficient balance”
 
-let balance = 1000;
-let totalwithdraw=0;
-let flag = false;
-let counter = 0;
-while (balance > 0 && counter !== 3) {
-  let withdraw = +prompt(
-    "kitna paise withdraw karna hai yaad rhe 3 he baar kar sakte ho",
-  );
-  counter++;
-  if (withdraw <= balance) {
-    balance -= withdraw;
-    totalwithdraw +=withdraw
-  } else {
-    flag = true;
-    break;
-  }
+// let balance = 1000;
+// let totalwithdraw=0;
+// let flag = false;
+// let counter = 0;
+// while (balance > 0 && counter !== 3) {
+//   let withdraw = +prompt(
+//     "kitna paise withdraw karna hai yaad rhe 3 he baar kar sakte ho",
+//   );
+//   counter++;
+//   if (withdraw <= balance) {
+//     balance -= withdraw;
+//     totalwithdraw +=withdraw
+//   } else {
+//     flag = true;
+//     break;
+//   }
   
-}
-if (flag === true) {
-  console.log("Insufficient balance");
-}
-console.log(`you have withdrawal :- ${totalwithdraw}`)
-console.log(`avilable balance is :- ${balance} `);
+// }
+// if (flag === true) {
+//   console.log("Insufficient balance");
+// }
+// console.log(`you have withdrawal :- ${totalwithdraw}`)
+// console.log(`avilable balance is :- ${balance} `);
