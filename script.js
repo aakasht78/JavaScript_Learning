@@ -3,6 +3,8 @@
 // sconst discount =100
 // console.log(a)
 
+// const { availableMemory } = require("node:process");
+
 // const { log } = require("node:console")
 
 // types of console
@@ -123,3 +125,76 @@
 // }
 // a()// ayise use kar sakte ha 
 // function a(){}
+
+
+// function name(){
+//     console.log("aakash")
+// }
+// name()
+
+//  parameters and arguments in funtion 
+
+// function abcd(age, name ){
+//     console.log(age,name)
+// }
+// abcd(12, "vicky") // arguments
+
+// rest parameter 
+
+// function abcd(a,b,...c){
+//     console.log(a,b,c)
+// }
+// abcd(1,2,3,4,5,6,7,8,9)
+
+// hoisting :- kisi cheeZ ke bane ke phale uska istmal kar pana 
+
+ // function me hum is difine hone se phale bhi use kar sakte hai 
+// function a(){
+//     console.log(
+//         "aakash"
+//     )
+// }
+
+// var a=function(){
+//     console.log(
+//         "aakash"
+//     )
+// }
+// Error :- Uncaught TypeError: a is not a function
+
+// function a(){} → poora function hoist ✅
+// var a = function(){} → sirf a hoist, value initially undefined ❌
+
+// - Paramertes in JS - [`required`, `destructured`, `rest`, `default`]
+
+// required parameter
+
+    // function abcd(a,b,c,d){
+    //     console.log(a,b,c,d)
+    //     // agar aapne parameter banaaye and aapne unme arguments nahi bheje tho fir wo value parameter ki undifined ho jaayegi
+    // }
+    // abcd()
+
+
+// default parameter
+
+// function ab(a=0,b=0,c=0){ // ye ha par hum default values de salte hai other wise undifined aaye ga 
+//     console.log(a,b,c)
+// }
+// ab(1,2)
+
+// `destructured`, `rest`, ===> is ke like OOPS and object lage ga
+
+
+// - Arguments in JS -[`positional`,`default`, `spread`]
+
+// function ab(a=0,b=0,c=0,d=0){// default hai
+//     console.log(a,b,c,d)
+// }
+// ab(1,2,3,4) // ye [psitional hai]
+
+// function ab(a=0,b=0,c=0,d=0){// default hai
+//     console.log(a,b,c,d)
+// }
+// let arr=[1,2,3,4] // ye hai spread 
+// ab(...arr) // ye [psitional hai]
