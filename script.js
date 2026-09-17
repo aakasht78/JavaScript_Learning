@@ -83,7 +83,6 @@
 //     else console.log(i)
 // }
 
-
 // --- Recursion In JS
 
 // function abcd(){
@@ -91,7 +90,6 @@
 //     abcd()
 // }
 // abcd()
-
 
 // Continue in JS
 
@@ -119,36 +117,35 @@
 // doSomething("Aakash",25,"aakash@gmial.com")
 
 // variable hoisting
-// a() // ayise use nahi kar sakte variable me 
+// a() // ayise use nahi kar sakte variable me
 // var a = function(){
 
 // }
-// a()// ayise use kar sakte ha 
+// a()// ayise use kar sakte ha
 // function a(){}
-
 
 // function name(){
 //     console.log("aakash")
 // }
 // name()
 
-//  parameters and arguments in funtion 
+//  parameters and arguments in funtion
 
 // function abcd(age, name ){
 //     console.log(age,name)
 // }
 // abcd(12, "vicky") // arguments
 
-// rest parameter 
+// rest parameter
 
 // function abcd(a,b,...c){
 //     console.log(a,b,c)
 // }
 // abcd(1,2,3,4,5,6,7,8,9)
 
-// hoisting :- kisi cheeZ ke bane ke phale uska istmal kar pana 
+// hoisting :- kisi cheeZ ke bane ke phale uska istmal kar pana
 
- // function me hum is difine hone se phale bhi use kar sakte hai 
+// function me hum is difine hone se phale bhi use kar sakte hai
 // function a(){
 //     console.log(
 //         "aakash"
@@ -169,22 +166,20 @@
 
 // required parameter
 
-    // function abcd(a,b,c,d){
-    //     console.log(a,b,c,d)
-    //     // agar aapne parameter banaaye and aapne unme arguments nahi bheje tho fir wo value parameter ki undifined ho jaayegi
-    // }
-    // abcd()
-
+// function abcd(a,b,c,d){
+//     console.log(a,b,c,d)
+//     // agar aapne parameter banaaye and aapne unme arguments nahi bheje tho fir wo value parameter ki undifined ho jaayegi
+// }
+// abcd()
 
 // default parameter
 
-// function ab(a=0,b=0,c=0){ // ye ha par hum default values de salte hai other wise undifined aaye ga 
+// function ab(a=0,b=0,c=0){ // ye ha par hum default values de salte hai other wise undifined aaye ga
 //     console.log(a,b,c)
 // }
 // ab(1,2)
 
 // `destructured`, `rest`, ===> is ke like OOPS and object lage ga
-
 
 // - Arguments in JS -[`positional`,`default`, `spread`]
 
@@ -196,5 +191,68 @@
 // function ab(a=0,b=0,c=0,d=0){// default hai
 //     console.log(a,b,c,d)
 // }
-// let arr=[1,2,3,4] // ye hai spread 
+// let arr=[1,2,3,4] // ye hai spread
 // ab(...arr) // ye [psitional hai]
+
+// Nested Function
+// function ab(){
+//     function cd(){
+//         console.log("ander ka chala cd")
+//     }
+//     cd()
+// }
+// ab()
+
+// Scope chain
+// let a=12 //global scope
+// function abcd(){
+//      let b = 13;
+//      function df(){
+//         console.log(b)
+//      }
+
+// }
+// abcd()
+
+// - Understanding Immediately Invoked Function Expression (IIFE)
+
+// (function () {})()(
+//   // - function without name ,  this use to make private variable
+
+//   // example
+
+//   function () {
+//     let balance = 5000;
+//   },
+// )();
+
+
+//  Fat Arrow Function 
+
+let fnc = ()=>{
+    console.log("Aaaaa")
+}
+fnc()
+
+// Anonymous Function :- ek ayisa function jiska koi naam naa ho 
+    // function() {
+    //     console.log("Hello");
+    // }
+
+
+// Higher Order Function 
+    // 1. ek aisa fnc jo ki return karde ek aur funtion 
+    // wo fnc accept karle ek aur fnc parameter main 
+
+    // // 1.
+    // function abcd(){
+    //     return function(){
+    //     }
+    // }
+
+    //2.
+    function ab(){
+    }
+    ab(function cd(){}) // ye he callback function bhi hai 
+
+

@@ -289,3 +289,78 @@ function a(){
 // }
 // let arr=[1,2,3,4] // ye hai spread 
 // ab(...arr) // ye [psitional hai]
+
+// function Types
+    [Classic function, Nested function(funtion within function// function ke ander function), Scope Chain in JS]
+
+    // Nested Function
+    function ab(){
+        function cd(){
+            console.log("ander ka chala cd")
+        }
+        cd()
+    }
+    ab()
+
+
+    // Scope chain
+    let a=12 //global scope
+    function abcd(){
+         let b = 13;
+         function df(){
+            console.log(b)
+         }
+         
+    }
+    abcd()
+
+
+- Understanding Immediately Invoked Function Expression (IIFE)
+    
+(function () {})()(
+  // - function without name ,  this use to make private variable
+
+  // example
+
+  function () {
+    let balance = 5000;
+  },
+)();
+
+
+// More Functions in JS -[Arrow Function. Fat Arrow, Anonymousm, Higher Order, Callback,First class, Pure Function, Impure Function]
+// Arrow Function :- normal 
+    Eg:- 
+    let function a(){
+        console.log("Aakash")
+    } 
+
+//  Fat Arrow Function 
+    ()=>{}
+    ({})=>{}
+
+let fnc = ()=>{
+    console.log("Aaaaa")
+}
+fnc()
+
+// Anonymous Function :- ek ayisa function jiska koi naam naa ho 
+    // function() {
+    //     console.log("Hello");
+    // }
+
+
+// Higher Order Function 
+    // 1. ek aisa fnc jo ki return karde ek aur funtion 
+    // wo fnc accept karle ek aur fnc parameter main 
+
+    // 1.
+    function abcd(){
+        return function(){
+        }
+    }
+
+    //2.
+    function ab(){
+    }
+    ab(function cd(){})
