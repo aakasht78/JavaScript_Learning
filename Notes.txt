@@ -364,3 +364,78 @@ fnc()
     function ab(){
     }
     ab(function cd(){})
+
+
+    // First class 
+
+###  Pure Function
+A **pure function** always gives the same output for the same input and does not modify anything outside its scope.        
+
+// pure Function = ek aisa function jo ye 2 chiZe Follow karta hai
+                    same input hone par same output hota hai 
+                    koi side effect nahi hoga
+
+// impure function 
+    same input = diffrent output ho sakta hai 
+               side effect hosakta hai       
+
+// Closure -> ek function hai jo return karta hai function but
+              returning function jo hai wo parent function ka koi variable use kar gaaa 
+        
+    function ab(){
+        let a= 12;
+        return function(){
+            console.log(a)
+        }
+    }
+    let fun= ab()
+    fun()
+
+/* 🔥 Closure kya hai?
+
+Jab ek inner function, apne outer function ke variables ko remember karta hai, even after outer function ka execution khatam ho gaya ho, usko Closure kehte hain.
+
+Tere example mein:
+
+ab()
+ │
+ ├── a = 12
+ │
+ └── inner function
+       │
+       └── remembers → a
+       
+*/
+
+
+// =================+++++++++++++++++++++ Arrays +++++++++++++++++++++======================
+
+// Ararys ->
+//  ek se jaada members rakhne ki jagah hote hai
+             // 0   1   2    3    4    5    6 
+    let arr = [671,902,3534,4534,5675,8996,4567]
+    console.log(arr[5])
+
+// How to create Arrays in JS
+    let arr = []
+    let arr2 = new Array()
+/*[]              → array banao
+[5]             → 5 ko value samjho
+
+new Array()     → empty array
+new Array(5)    → 5 length ka empty array
+new Array(5,6)  → [5,6]*/
+
+matalb arr[5] ye bus 1 array ho ga [5]
+NewArray(5) 5 length honge [0,1,2,3,4]
+
+
+
+// Understanding how to Accessing Elements in Array
+
+    let arr = [1,2,3,4,5]
+    console.log(arr[3])
+
+
+// Function on Arrays -[push, pop , shift,unshift, indexof, array destructuring ,filter, some,
+                        map ,reduce ,spread operator, slice, reverse , sort, join, toString]

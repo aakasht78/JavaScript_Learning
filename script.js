@@ -229,10 +229,10 @@
 
 //  Fat Arrow Function 
 
-let fnc = ()=>{
-    console.log("Aaaaa")
-}
-fnc()
+// let fnc = ()=>{
+//     console.log("Aaaaa")
+// }
+// fnc()
 
 // Anonymous Function :- ek ayisa function jiska koi naam naa ho 
     // function() {
@@ -251,8 +251,80 @@ fnc()
     // }
 
     //2.
-    function ab(){
-    }
-    ab(function cd(){}) // ye he callback function bhi hai 
+    // function ab(){
+    // }
+    // ab(function cd(){}) // ye he callback function bhi hai 
+
+// pure Function = ek aisa function jo ye 2 chiZe Follow karta hai
+                 //   same input hone par same output hota hai 
+                   // koi side effect nahi hoga
+    // let a = 12
+    // function ab(val){
+    //     console.log(val+2)
+    // }
+    // ab(12) // is me ye bina a ko modifiy kiye output dega 
+
+// Impure Function :- 
+//          An **impure function** changes external variables or depends on them.
+
+    // let a=12;
+    // function ab(val){
+    // a= Math.random()+val
+    // console.log(a)
+    // }
+    // ab(12)
+    // ab(12)
+    // ab(12)
+    // ab(12)
+
+    // Closure -> highr order function bhi hota hai 
+
+    // function ab(){
+    //     let a= 12;
+    //     return function(){
+    //         console.log(a)
+    //     }
+    // }
+    // let fun= ab()
+    // fun()
+
+/* 🔥 Closure kya hai?
+
+Jab ek inner function, apne outer function ke variables ko remember karta hai, even after outer function ka execution khatam ho gaya ho, usko Closure kehte hain.
+
+Tere example mein:
+
+ab()
+ │
+ ├── a = 12
+ │
+ └── inner function
+       │
+       └── remembers → a
+       
+*/
 
 
+// =================+++++++++++++++++++++ Arrays +++++++++++++++++++++======================
+
+// Ararys ->
+//  ek se jaada members rakhne ki jagah hote hai
+                // 0   1   2    3    4    5    6 
+    // let arr = [671,902,3534,4534,5675,8996,4567]
+    // console.log(arr[5])
+
+    // How to create Arrays in JS
+    // let arr = []
+    // let arr2 = new Array()
+/*[]              → array banao
+[5]             → 5 ko value samjho
+
+new Array()     → empty array
+new Array(5)    → 5 length ka empty array
+new Array(5,6)  → [5,6]*/
+
+
+// Understanding how to Accessing Elements in Array
+
+    let arr = [1,2,3,4,5]
+    console.log(arr[3])
