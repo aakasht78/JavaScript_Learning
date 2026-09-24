@@ -407,6 +407,20 @@ ab()
        
 */
 
+// ======================================Return ==============================================
+🔥 return kya karta hai?
+
+return function ke andar ka result function ke bahar bhejta hai.
+return = function ka result bahar bhejna + function ko wahi stop kar dena. 🧠
+
+JavaScript mein return ko function ke bahar use nahi kar sakte. ❌
+
+return 10;
+
+Function ke bahar → SyntaxError
+
+return ka purpose hi hai function se value bahar bhejna aur function ko stop karna.
+
 
 // =================+++++++++++++++++++++ Arrays +++++++++++++++++++++======================
 
@@ -439,3 +453,75 @@ NewArray(5) 5 length honge [0,1,2,3,4]
 
 // Function on Arrays -[push, pop , shift,unshift, indexof, array destructuring ,filter, some,
                         map ,reduce ,spread operator, slice, reverse , sort, join, toString]
+
+
+// Iterating over Arrays using -[For loop , forEach-ye shirf array par chalta hai ]
+
+// let arr = [1,2,3,4]
+// for(let i = 0; i<4; i++){
+//     console.log(arr[i])
+// }
+// let arr = [1,2,3,4]
+// arr.forEach(function(val){
+//     console.log(val)
+// })
+
+
+
+// -Understanding what are Object in JS 
+// [key-value pair]
+
+
+let obj ={
+//  KEY    VALUE
+    name :"aakash",
+    age :25,
+    email:"aakash@gmail.com"
+}
+
+let obj2 =new Object();
+
+1️⃣ Object Literal — {}
+let obj = {
+    name: "aakash",
+    age: 25,
+    email: "aakash@gmail.com"
+}
+
+Isko Object Literal bolte hain.
+
+Yaha tum object banate waqt hi properties de rahe ho:
+
+obj.name   // "aakash"
+obj.age    // 25
+2️⃣ new Object()
+let obj2 = new Object();
+
+Ye bhi ek empty object banata hai.
+
+Ab properties baad me add kar sakte ho:
+
+obj2.name = "aakash";
+obj2.age = 25;
+obj2.email = "aakash@gmail.com";
+
+Ab obj2 bhi almost obj jaisa hi ho gaya.
+
+🔥 Main difference
+let obj = {}	let obj2 = new Object()
+Object Literal	Object Constructor
+Short & simple	Thoda lengthy
+Most commonly used	Rarely needed
+Properties directly likh sakte ho	Baad me bhi add kar sakte ho
+
+
+
+// Nested Object 
+    let obj={
+        name:"aakash",
+        socials:{
+            instagram:"_aakash7781",
+            facebook:"aakash",
+        }
+    }
+    console.log(obj.socials)

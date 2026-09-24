@@ -326,5 +326,106 @@ new Array(5,6)  → [5,6]*/
 
 // Understanding how to Accessing Elements in Array
 
-    let arr = [1,2,3,4,5]
-    console.log(arr[3])
+    // let arr = [1,2,3,4,5]
+    // console.log(arr[3])
+
+
+    
+// Function on Arrays -[push, pop , shift,unshift, indexof, array destructuring ,filter, some,
+                        // map ,reduce ,spread operator, slice, reverse , sort, join, toString]
+
+
+//------------Push                    
+// let arr = [1,2,3,4,5,6]
+// arr.push(5)
+// console.log(arr) // Array ke END mein new value add karna. ✅ [1, 2, 3, 4, 5, 6, 5]
+
+// ------------POP
+// let arr = [1,2,3,4,5,6,7,8,9]
+// arr.pop() // last wala remove ho jaye da is me 9 remove hua 
+// console.log(arr) 
+
+//------------Shift
+// let arr = [1,2,3,4,5,6,7,8,9]
+// arr.shift() // starting ki 1st value ko remove kar deta hai 
+// console.log(arr) 
+
+//------------UnShift
+// let arr = [1,2,3,4,5,6,7,8,9]
+// arr.unshift(0) // starting ki 1st me value ko add kar deta hai 
+// console.log(arr) 
+
+// //------------indexof
+// let arr = [1,2,3,4,5,6,7,8,9]
+// console.log(arr.indexOf(5) )  // Array ka index value batata hai 
+
+//------------array destructuring
+// let arr = [1,2,3,4,5,6,7,8,9]
+// let [a,,b]=arr;
+
+//------------filter // ye new array banata hai or filter lagata hai is eg main ye 3 se chote value ko print kar rha (condtion ka use hota hai)
+// let arr = [1,2,3,4,]
+// let arr2 = arr.filter(function(val){
+//     return val<3
+// })
+// console.log(arr2)
+
+//------------sum
+// let arr = [1,2,3,4,5,6,7,8,9]
+// let [a,,b]=arr;
+
+// Iterating over Arrays using -[For loop , forEach-ye shirf array par chalta hai ]
+
+// let arr = [1,2,3,4]
+// for(let i = 0; i<4; i++){
+//     console.log(arr[i])
+// }
+// let arr = [1,2,3,4]
+// arr.forEach(function(val){
+//     console.log(val)
+// })
+
+
+// -Understanding what are Object in JS 
+// [key-value pair]
+
+
+// let obj ={
+// //  KEY    VALUE
+//     name :"aakash",
+//     age :25,
+//     email:"aakash@gmail.com"
+// }
+
+// let obj2 =new Object();
+
+// Creating Object, Accessing Properties, Deleting Property and Nested objects
+
+// let obj = {
+//     name :"aakash"
+// }
+// Accessing 
+// console.log(obj[`name`]) // ye 2 tarika hai Access karne kaa
+// console.log(obj.name)
+
+//Deleting
+// delete obj.name
+// console.log(obj.name)
+
+// // Nested Object 
+//     let obj={
+//         name:"aakash",
+//         socials:{
+//             instagram:"_aakash7781",
+//             facebook:"aakash",
+//         }
+//     }
+//     console.log(obj.socials)
+
+// Recognise How Objects Are Stored, Traverse Keys of an Object, Array as Object. 
+
+// Recognise How Objects Are Stored,
+// {
+//     name:"aakash"
+//     age:27
+// }
