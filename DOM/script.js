@@ -101,3 +101,5 @@
     div.style.backgroundColor = 'red'
     var main= document.querySelector('main')
     main.appendChild(div)
+
+    // When user clicks on button create h1, put ramdom quote in it (from array) and give random postion, rotion , color,scale and append them to parent 
