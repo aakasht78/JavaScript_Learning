@@ -1,5 +1,4 @@
-
-// // DOM 4 Pillars for fundamentals 
+// // DOM 4 Pillars for fundamentals
 
 // // 1. Selection Of an Element
 // //              camel case
@@ -8,7 +7,7 @@
 //     var box = document.querySelector('#box')
 //     // box.innerHTML = 'HEY HEY '
 
-// // 2. Changing HTML 
+// // 2. Changing HTML
 //     h1.innerHTML = 'DOM'
 
 // // 3. Changing CSS
@@ -17,89 +16,140 @@
 //     h1.style.cursor="pointer";
 //     // box.style.backgroundColor = 'orange'
 
-    
-// // 4. Event Listeners 
+// // 4. Event Listeners
 
-//     h1.addEventListener('click',function(){ 
+//     h1.addEventListener('click',function(){
 //         h1.innerHTML = "Learning DOM"
 //     })
 
+// More On Selection of Element
 
-// More On Selection of Element 
+// var h1 = document.getElementById('hero')
+// console.log(h1)
+// var ccc = document.getElementsByClassName('class1')
+// console.log(ccc)
 
-    // var h1 = document.getElementById('hero')
-    // console.log(h1)
-    // var ccc = document.getElementsByClassName('class1')
-    // console.log(ccc)
-    
+// Math.random
 
-// Math.random 
+// var a = Math.random()*1000
+// var b = Math.floor(a)//random number me se point ke aage ka remove karne me kaam aata hai
+// var b = Math.floor(Math.random()*100) // single line code for above code
+// console.log(b)
 
-    // var a = Math.random()*1000
-    // var b = Math.floor(a)//random number me se point ke aage ka remove karne me kaam aata hai
-    // var b = Math.floor(Math.random()*100) // single line code for above code 
-    // console.log(b)
-
-    // Random Name genrator
-    // var arr = ["Aakash","ram","panday","satvik","Avi",'sarthak','harsh']
-    // var a = Math.floor(Math.random()*arr.length)
-    // console.log(arr[a])
-
+// Random Name genrator
+// var arr = ["Aakash","ram","panday","satvik","Avi",'sarthak','harsh']
+// var a = Math.floor(Math.random()*arr.length)
+// console.log(arr[a])
 
 // Array Of Object
 
-    // var arr = [
-    //     {
-    //         team:'CSK',
-    //         primary:'Yellow',
-    //         secondary:'blue'
-    //     },
-    //     {
-    //         team:'RCB',
-    //         primary:'Red',
-    //         secondary:'black'
+// var arr = [
+//     {
+//         team:'CSK',
+//         primary:'Yellow',
+//         secondary:'blue'
+//     },
+//     {
+//         team:'RCB',
+//         primary:'Red',
+//         secondary:'black'
 
-    //     },
-    //     {
-    //         team:'MI',
-    //         primary:'Blue',
-    //         secondary:'gold'
+//     },
+//     {
+//         team:'MI',
+//         primary:'Blue',
+//         secondary:'gold'
 
-    //     },
-    //     {
-    //         team:'KKR',
-    //         primary:'purple',
-    //         secondary:'gold'
-    //     }  
-    // ]
-    // console.log(arr[0].team)
+//     },
+//     {
+//         team:'KKR',
+//         primary:'purple',
+//         secondary:'gold'
+//     }
+// ]
+// console.log(arr[0].team)
+
+// Create Element // iska matalb koi chiz html me add karna like h1, div etc...
+
+// var btn = document.querySelector('button')
+// btn.addEventListener('click',function(){
+// var h1 = document.createElement('h1')
+// h1.innerHTML = "Hello from JS"
+// console.log(h1)
+// })
+
+// Appending a child // is ka matalb wo HTML file me jaa ke add ho jaye gaa
+
+// var h1 = document.createElement('h1')
+// h1.innerHTML ="Hello from JS"
+
+// var main = document.querySelector('main')
+
+// main.appendChild(h1)
+
+// var div = document.createElement('div')
+// div.style.height = '200px'
+// div.style.width = '200px'
+// div.style.backgroundColor = 'red'
+// var main= document.querySelector('main')
+// main.appendChild(div)
+
+// When user clicks on button create h1, put ramdom quote in it (from array) and give random postion, rotion , color,scale and append them to parent
+
+// SetTimeout // ----------------------------------------------------------------------------
+// SetInterval
+
+// SetTimeout :- it is method use to delay
+
+// setTimeout(function(){
+// console.log('Hello1')
+
+// },3000)
+// setTimeout(function(){
+//     console.log('Hello2')
+// },4000)
+
+// setTimeout(function(){
+//     console.log('Hello3')
+// },1000)
+
+// var btn = document.querySelector('button')
+// var h1 = document.querySelector('h1')
+
+// btn.addEventListener('click',function(){
+//     h1.innerHTML = 'Changing user....'
+//     setTimeout(function(){
+//     h1.innerHTML='Hello I am Raghav'
+//     },1000)
+// })
 
 
-    // Create Element // iska matalb koi chiz html me add karna like h1, div etc...
+// SetInterval :- controlled Loop // ye kisi chiz ko ek time ke gap main kare ga 
 
-    // var btn = document.querySelector('button')
-    // btn.addEventListener('click',function(){
-    // var h1 = document.createElement('h1')
-    // h1.innerHTML = "Hello from JS"
-    // console.log(h1)
-    // })
+// setInterval(function(){
+//     console.log('object')
+// },1000)
 
 
-    // Appending a child // is ka matalb wo HTML file me jaa ke add ho jaye gaa 
+// var a = 0
 
-    // var h1 = document.createElement('h1')
-    // h1.innerHTML ="Hello from JS"
+// setInterval(function(){
+//     a++
+//     console.log(a)
+// },10000)
 
-    // var main = document.querySelector('main')
+var a = 0
 
-    // main.appendChild(h1)
+var int = setInterval(()=>{
+    a++
+    console.log(a)
+},10)
 
-    
-    var div = document.createElement('div')
-    div.style.height = '200px'
-    div.style.width = '200px'
-    div.style.backgroundColor = 'red'
-    var main= document.querySelector('main')
-    main.appendChild(div)
+setTimeout(()=>{ 
+clearInterval(int)// ye use hota hai SetInterval ko control karne ke liye
+},1000)
 
-    // When user clicks on button create h1, put ramdom quote in it (from array) and give random postion, rotion , color,scale and append them to parent 
+
+
+
+

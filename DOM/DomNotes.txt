@@ -49,3 +49,35 @@ DOM 4 Pillars for fundamentals
     // var b = Math.floor(a)//random number me se point ke aage ka remove karne me kaam aata hai
     // var b = Math.floor(Math.random()*100) // single line code for above code 
     // console.log(b)
+
+
+// ----------------------------------------------------------------------------
+
+// SetTimeout :- it is method use to delay
+
+// SetInterval ;- controlled Loop // ye kisi chiz ko ek time ke gap main kare ga 
+
+    // SetTimeout :- it is method use to delay
+
+    // setTimeout(function(){
+    // console.log('Hello1')
+
+    // },3000)
+    // setTimeout(function(){
+    //     console.log('Hello2')
+    // },4000)
+
+    // setTimeout(function(){
+    //     console.log('Hello3')
+    // },1000)
+
+
+    // var btn = document.querySelector('button')
+    // var h1 = document.querySelector('h1')
+    
+    // btn.addEventListener('click',function(){
+    //     h1.innerHTML = 'Changing user....'
+    //     setTimeout(function(){
+    //     h1.innerHTML='Hello I am Raghav'
+    //     },1000)
+    // })
